@@ -1,7 +1,7 @@
 # A Self-Synchronizing, Low-Power, Low-Complexity Transceiver for Body-Coupled Communication (BCC)
 Just imagine your body is being used as a communication medium. No wireless medium and no wire, instead, your body transfers data between the smart devices connected to your body. Also imagine using this technique to connect the worn devices while you are underwater.
 
-**Note1:** The Arduino codes provided here are non-professional and are an example implementation. You may need to change them as per your needs. ECS1 is used in these codes. However, other ECS members can also be used.
+**Note1:** The Arduino codes provided here are non-professional and are an example implementation. You may need to change them as per your needs. ECS2 (PDC) is used in these codes. However, other ECS members can also be used.
 
 **Note2:** Detailed text and pulications are at the bottom of the page. Following is a brief introduction.
 
