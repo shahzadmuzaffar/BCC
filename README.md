@@ -18,7 +18,17 @@ sub-1nJ/bit energy efficiency.
 
 The basic circuit to transmit and detect BCC signals is shown in Figure 1. The developed BCC transceiver 
 circuit is shown in Figure 2. The demo setup is shown in Figure 3.
-A judicious selection of the bit encoding protocol results in a significant simplification of the BCC 
+The experimental setup uses a set of BCC transceivers to test and verify the bi-directional body channel communica-
+tion link. There are two ends of the communication link, Node1 and Node2. At each end, the
+ECS protocol (with an embedded C implementation) runs over an Arduino-101 board that is connected to the BCC
+transceiver. The BCC transceivers are then connected to the human body. Node1 starts communication by sending an
+initialization signal followed by the transmission of a 16-bit data. The data is encoded to generate a ECS packet, 
+and the resulting pulses are transmitted through the human body via the BCC transceiver. The BCC transceiver at Node2
+recovers the transmitted ECS pulses, and the ECS decoder on the Arduino-101 board decodes the received packet to
+infer the transmitted data. Similarly, Node2 transmits back the received data and Node1 receives and compares it with
+its own copy.
+
+The judicious selection of the bit encoding protocol results in a significant simplification of the BCC 
 transceiver. In particular, the selection of the edge-based encoding protocol as implemented in the ECS family 
 results in a streamlined analog transceiver architecture that does not require the data conversion, data 
 synchronization or duty cycle correction blocks.
